@@ -1,11 +1,14 @@
-// Base
-@import 'base/_libraries';
-@import 'base/_global';
-
 // Variables
 @import 'variables/_colors';
 @import 'variables/_devices';
 @import 'variables/_typography';
 
+// Base
+@import 'base/_libraries';
+@import 'base/_global';
+@import 'base/_fonts';
+
 // Components
+@import 'components/_copyright';
+@import 'components/_react-app';
 @import 'components/_react-component';

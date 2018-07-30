@@ -1,1 +1,32 @@
 // React Component
+
+.react-component {
+  text-align: center;
+
+  &__icon {
+    color: $blueLight;
+    font-size: 7em;
+    @media screen and (width >= $device-md) {
+      font-size: 9em;
+    }
+  }
+
+  &__title {
+    color: $blueLight;
+    font-family: $fontTitle;
+    letter-spacing: 3px;
+    @media screen and (width >= $device-md) {
+      font-size: 3em;
+    }
+  }
+
+  &__content {
+    color: $white;
+    font-family: $fontContent;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    @media screen and (width >= $device-md) {
+      font-size: 1.75em;
+    }
+  }
+}
