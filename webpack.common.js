@@ -1,4 +1,5 @@
 const path = require('path');
+let FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -14,19 +15,19 @@ module.exports = {
         use: 'babel-loader',
         exclude: /node_modules/
       },
-      // {
-      //   test: '',
-      //   use: [
-      //     {
-      //       loader: 'file-loader',
-      //       options: {
-      //         name: '[name].[ext]',
-      //         outputPath: ''
-      //       }
-      //     }
-      //   ],
-      //   exclude: /node_modules/
-      // }
+      {
+        test: /\.(gif|svg|jpg|png)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/images'
+            }
+          }
+        ],
+        exclude: /node_modules/
+      }
     ]
   },
   plugins: [
