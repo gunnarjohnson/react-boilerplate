@@ -17,11 +17,11 @@
 ### Get Boilerplate
 Choose from the following options:
 * **Clone**
-	* Create your repository: https://github.com/\<your-name>/\<your-repo>.git
+	* Create your repository: https://github.com/your-name/your-repo.git
 	* Clone boilerplate repository: `git clone https://github.com/gunnarjohnson/react-boilerplate.git`
     * Rename origin: `git remote rename origin upstream`
-    	* This allows you to use ` git pull upstream master ` to pull changes from the boilerplate repository
-    * Add new origin: `git remote add origin https://github.com/<your-name>/<your-repo>.git`
+    	* This allows you to use `git pull upstream master` to pull changes from the boilerplate repository
+    * Add new origin: `git remote add origin https://github.com/your-name/your-repo.git`
     * Push changes to your repository: `git push origin master`
 * [**Download**](https://github.com/gunnarjohnson/react-boilerplate/archive/master.zip)
 * [**Fork**](https://github.com/gunnarjohnson/react-boilerplate/fork)
