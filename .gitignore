@@ -75,5 +75,5 @@ typings/
 # Visual Studio Code
 .vscode
 
-#Mac storage file
+# Mac storage file
 .DS_Store
