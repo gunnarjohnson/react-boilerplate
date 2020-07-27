@@ -3,7 +3,7 @@ let FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: ['./src/app.js'],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
@@ -48,6 +48,6 @@ module.exports = {
     //     windows: false
     //   }
     // }),
-    new HtmlWebpackPlugin({template: './src/index.html'})  
+    new HtmlWebpackPlugin({ template: './src/index.html' })  
   ]
 };

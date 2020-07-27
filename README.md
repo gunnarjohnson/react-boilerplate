@@ -11,7 +11,7 @@
 ## Installation
 
 ### Prerequisites
-* [Node.js >= 8.9.4](https://nodejs.org/) (in order to use Webpack 4)
+* [Node.js >= 10.0.0](https://nodejs.org/)
 * npm (included with Node.js)
 
 ### Get Boilerplate
@@ -19,7 +19,7 @@ Choose from the following options:
 * **Clone**
 	* Create your repository: https://github.com/your-name/your-repo.git
 	* Clone boilerplate repository: `git clone https://github.com/gunnarjohnson/react-boilerplate.git your-directory`
-  * Change to your directory: `cd your-directory`
+  * Navigate to your directory: `cd your-directory`
   * Remove origin: `git remote rm origin`
   * Add new origin: `git remote add origin https://github.com/your-name/your-repo.git`
   * Push project to your repository: `git push origin master`
@@ -53,13 +53,13 @@ Installs the dependencies in the local `node_modules` folder.
 ```
 npm run dev
 ```
-Runs the app in Webpack's development mode using `webpack-serve`. Open [http://localhost:8080/](http://localhost:8080/) to view it in the browser.
+Runs the app in Webpack's development mode using `webpack-plugin-serve`. Open [http://localhost:8080/](http://localhost:8080/) to view the app in the browser.
 
 ### Deployment
 ```
 npm run build
 ```
-Builds the app in Webpack's production mode to the `dist` folder.
+Builds the app in Webpack's production mode to the `dist` folder. Rename this directory to `docs` if you intend to publish the app with GitHub Pages.
 
 ## Support
 Ideas? Questions? Please [open an issue](https://github.com/gunnarjohnson/react-boilerplate/issues/new).
