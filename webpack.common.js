@@ -1,5 +1,5 @@
 const path = require('path');
-let FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+// const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -33,7 +33,7 @@ module.exports = {
   plugins: [
     // new FaviconsWebpackPlugin({
     //   logo: './src/assets/icons/icon.png',
-    //   prefix: 'assets/icons/',
+    //   prefix: './assets/icons/',
     //   title: '',
     //   icons: {
     //     android: true,
