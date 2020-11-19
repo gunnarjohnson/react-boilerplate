@@ -12,7 +12,7 @@ const ReactComponent = (props) => (
 
 ReactComponent.defaultProps = {
   title: 'React Boilerplate',
-  subtitle: "Start building"
+  subtitle: 'Start building',
 };
 
 export default ReactComponent;

@@ -9,6 +9,6 @@
 @import 'base/_fonts';
 
 // Components
+@import 'components/_app';
 @import 'components/_copyright';
-@import 'components/_react-app';
 @import 'components/_react-component';

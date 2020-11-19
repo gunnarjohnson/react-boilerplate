@@ -12,24 +12,24 @@ module.exports = merge(common, {
         test: /\.css$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader
+            loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
           {
             loader: 'postcss-loader',
             options: {
               config: {
-                path: path.resolve(__dirname, 'postcss.config.js')
-              }
-            }
-          }
+                path: path.resolve(__dirname, 'postcss.config.js'),
+              },
+            },
+          },
         ],
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: 'styles.css' }),
     new CleanWebpackPlugin()
-  ]
+  ],
 });

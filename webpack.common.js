@@ -3,17 +3,17 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: ['./src/app.js'],
+  entry: ['./src/index.js'],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         use: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.(gif|svg|jpg|png)$/,
@@ -22,13 +22,13 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'assets/images'
-            }
-          }
+              outputPath: 'assets/images',
+            },
+          },
         ],
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   plugins: [
     // new FaviconsWebpackPlugin({
@@ -48,6 +48,6 @@ module.exports = {
     //     windows: false
     //   }
     // }),
-    new HtmlWebpackPlugin({ template: './src/index.html' })  
-  ]
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
+  ],
 };
