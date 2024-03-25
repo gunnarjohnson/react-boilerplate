@@ -9,7 +9,12 @@ const Copyright = () => {
       <p className="copyright">
         {`© ${copyrightYear} `}
         {currentYear > copyrightYear && `- ${currentYear} `}
-        <a className="copyright__link" href="https://github.com/gunnarjohnson" target="_blank">
+        <a
+          className="copyright__link"
+          href="https://github.com/gunnarjohnson"
+          rel="noreferrer"
+          target="_blank"
+        >
           Gunnar Johnson
         </a>
       </p>

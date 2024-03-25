@@ -1,7 +1,7 @@
 const path = require('path');
 const { merge } = require('webpack-merge');
-const common = require('./webpack.common.js');
 const { WebpackPluginServe: Serve } = require('webpack-plugin-serve');
+const common = require('./webpack.common');
 
 module.exports = merge(common, {
   entry: ['webpack-plugin-serve/client'],
