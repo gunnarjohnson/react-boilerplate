@@ -33,7 +33,7 @@ module.exports = {
   plugins: [
     new FaviconsWebpackPlugin({
       logo: './src/assets/favicon-react.png',
-      prefix: './assets/',
+      prefix: 'assets/',
       title: '',
       icons: {
         android: true,

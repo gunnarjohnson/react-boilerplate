@@ -1,6 +1,6 @@
 # React Boilerplate
 
-**A modern React boilerplate with Babel + PostCSS + Webpack.** This boilerplate enables quick and easy [React](https://reactjs.org/) app development with [Webpack 4](https://webpack.js.org/), and supports next generation JavaScript and CSS via [Babel](https://babeljs.io/) and [PostCSS](https://postcss.org/).
+**A modern React boilerplate with Babel + PostCSS + Webpack.** This boilerplate enables quick and easy [React](https://reactjs.org/) app development with [Webpack 5](https://webpack.js.org/), and supports next generation JavaScript and CSS via [Babel](https://babeljs.io/) and [PostCSS](https://postcss.org/).
 
 ## Table of Contents
 
@@ -14,8 +14,8 @@
 
 ### Prerequisites
 
-- [Node.js >= 14.0.0](https://nodejs.org/)
-- npm (included with Node.js)
+- [Node.js >= 18.12.0](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (included with Node.js)
 
 ### Get Boilerplate
 
@@ -27,7 +27,7 @@ Choose from the following options:
   - Navigate to your directory: `cd your-directory`
   - Remove origin: `git remote rm origin`
   - Add new origin: `git remote add origin https://github.com/your-name/your-repo.git`
-  - Push project to your repository: `git push origin master`
+  - Push project to your repository: `git push origin main` (or `git push origin master`)
 - [**Download**](https://github.com/gunnarjohnson/react-boilerplate/archive/master.zip)
 - [**Fork**](https://github.com/gunnarjohnson/react-boilerplate/fork)
 
@@ -38,22 +38,6 @@ npm install
 ```
 
 Installs the dependencies in the local `node_modules` folder.
-
-### Modify Code Editor Settings (Optional)
-
-#### Visual Studio Code
-
-- Install the [postcss-language extension](https://marketplace.visualstudio.com/items?itemName=mhmadhamster.postcss-language)
-- Create `.vscode` folder in working directory: `/react-boilerplate/.vscode`
-- Create `settings.json` file in `.vscode` folder: `/react-boilerplate/.vscode/settings.json`
-- Add the following to `settings.json`:
-  ```
-  {
-    "files.associations": {
-      "*.css": "postcss"
-    }
-  }
-  ```
 
 ## Usage
 
