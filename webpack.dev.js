@@ -18,14 +18,7 @@ module.exports = merge(common, {
               importLoaders: 1,
             },
           },
-          {
-            loader: 'postcss-loader',
-            options: {
-              config: {
-                path: path.resolve(__dirname, 'postcss.config.js'),
-              },
-            },
-          },
+          'postcss-loader',
         ],
         exclude: /node_modules/,
       },

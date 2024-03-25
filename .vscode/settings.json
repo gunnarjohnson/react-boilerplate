@@ -1,0 +1,6 @@
+{
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "postcss.validate": false
+}

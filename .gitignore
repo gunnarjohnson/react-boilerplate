@@ -76,7 +76,9 @@ dist/
 .serverless
 
 # Visual Studio Code
-.vscode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
 
 # Mac storage file
 .DS_Store

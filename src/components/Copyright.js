@@ -7,8 +7,8 @@ const Copyright = () => {
   return (
     <footer>
       <p className="copyright">
-        {`© ${copyrightYear} `}
-        {currentYear > copyrightYear && `- ${currentYear} `}
+        © {copyrightYear}
+        {currentYear > copyrightYear && `-${currentYear}`}{' '}
         <a
           className="copyright__link"
           href="https://github.com/gunnarjohnson"
