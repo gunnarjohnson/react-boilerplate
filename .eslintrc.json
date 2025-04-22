@@ -4,6 +4,17 @@
     "node": true
   },
   "extends": ["airbnb", "plugin:prettier/recommended"],
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": "latest",
