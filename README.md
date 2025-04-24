@@ -5,7 +5,7 @@
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
+- [Commands](#commands)
 - [Support](#support)
 - [Contributing](#contributing)
 - [License](#license)
@@ -33,29 +33,51 @@ Choose from the following options:
 
 ### Install Dependencies
 
-```
+```sh
 npm install
 ```
 
 Installs the dependencies in the local `node_modules` folder.
 
-## Usage
+## Commands
 
-### Development
+**Compile and Minify for Production**
 
-```
-npm run dev
-```
-
-Runs the app in Webpack's development mode using `webpack-plugin-serve`. Open [http://localhost:8080/](http://localhost:8080/) to view the app in the browser.
-
-### Deployment
-
-```
+```sh
 npm run build
 ```
 
 Builds the app in Webpack's production mode to the `dist` folder. Rename this directory to `docs` if you intend to publish the app with GitHub Pages.
+
+**Compile and Hot-Reload for Development**
+
+```sh
+npm run dev
+```
+
+Runs the app in Webpack's development mode using `webpack-dev-server`. Open [http://localhost:8080/](http://localhost:8080/) to view the app in the browser.
+
+**Format with [Prettier](https://prettier.io/)**
+
+```sh
+npm run format
+```
+
+**Lint with [ESLint](https://eslint.org/)**
+
+```sh
+npm run lint
+```
+
+**Run Tests with [Jest](https://jestjs.io/)**
+
+```sh
+# Run tests once without watching for changes
+npm run test
+
+# Run tests and watch for changes
+npm run test:watch
+```
 
 ## Support
 
