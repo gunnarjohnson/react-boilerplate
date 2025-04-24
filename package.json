@@ -17,8 +17,9 @@
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "lint:js": "eslint \"**/*.{js,jsx}\"",
-    "test": "jest"
+    "lint": "eslint \"**/*.{js,jsx}\"",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
